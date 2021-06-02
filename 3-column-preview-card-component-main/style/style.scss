@@ -1,0 +1,102 @@
+@import "_variables";
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: $lightGray;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  //   align-items: center;
+  margin: auto;
+  height: max-content;
+  max-width: 70%;
+  margin-top: 100px;
+}
+.cards {
+  padding: 40px;
+  min-height: inherit;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: $lightGray;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+p {
+  color: $transparentWhite;
+}
+
+button {
+  color: black;
+  background-color: $lightGray;
+  padding: 15px 30px;
+  border: 2px solid $lightGray;
+  border-radius: 30px;
+  margin-top: 60px;
+  font-family: "Lexend Deca", sans-serif;
+  &:hover {
+    background-color: rgba(128, 128, 128, 0);
+    color: $lightGray;
+  }
+}
+
+#sedans {
+  background-color: $brightOrange;
+  border-radius: 10px 0 0 10px;
+  > button {
+    color: $brightOrange;
+    &:hover {
+      color: $lightGray;
+    }
+  }
+}
+
+#suvs {
+  background-color: $darkCyan;
+  > button {
+    color: $darkCyan;
+    &:hover {
+      color: $lightGray;
+    }
+  }
+}
+
+#luxury {
+  background-color: $veryDarkCyan;
+  border-radius: 0 10px 10px 0;
+  > button {
+    color: $veryDarkCyan;
+    &:hover {
+      color: $lightGray;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 90%;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  #sedans {
+    border-radius: 10px 10px 0 0;
+  }
+  #luxury {
+    border-radius: 0 0 10px 10px;
+  }
+}

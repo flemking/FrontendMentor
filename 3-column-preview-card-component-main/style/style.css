@@ -1,0 +1,117 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  max-width: 70%;
+  margin-top: 100px;
+}
+
+.cards {
+  padding: 40px;
+  min-height: inherit;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: #f2f2f2;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+button {
+  color: black;
+  background-color: #f2f2f2;
+  padding: 15px 30px;
+  border: 2px solid #f2f2f2;
+  border-radius: 30px;
+  margin-top: 60px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+button:hover {
+  background-color: rgba(128, 128, 128, 0);
+  color: #f2f2f2;
+}
+
+#sedans {
+  background-color: #e38826;
+  border-radius: 10px 0 0 10px;
+}
+
+#sedans > button {
+  color: #e38826;
+}
+
+#sedans > button:hover {
+  color: #f2f2f2;
+}
+
+#suvs {
+  background-color: #006970;
+}
+
+#suvs > button {
+  color: #006970;
+}
+
+#suvs > button:hover {
+  color: #f2f2f2;
+}
+
+#luxury {
+  background-color: #004241;
+  border-radius: 0 10px 10px 0;
+}
+
+#luxury > button {
+  color: #004241;
+}
+
+#luxury > button:hover {
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 90%;
+    margin-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #sedans {
+    border-radius: 10px 10px 0 0;
+  }
+  #luxury {
+    border-radius: 0 0 10px 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
