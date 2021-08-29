@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>IP Address Tracker</h1>
+        <div class="search">
+          <form action="">
+            <input
+              type="text"
+              placeholder="Search for any IP address or domain"
+              class="search-input"
+            />
+            <button type="submit" cursor="pointer" class="search-btn">></button>
+          </form>
+        </div>
+      </header>
+      <div class="infos">
+        <div class="info">
+          <h2>IP ADDRESS</h2>
+          <span id="ip">1111.222.2244</span>
+        </div>
+        <div class="info">
+          <h2>LOCATION</h2>
+          <span id="location">1111.222.2244</span>
+        </div>
+        <div class="info">
+          <h2>TIME ZONE</h2>
+          <span id="time">1111.222.2244</span>
+        </div>
+        <div class="info">
+          <h2>ISP</h2>
+          <span id="isp">111.222.244</span>
+        </div>
+      </div>
+      <div class="map" id="map"></div>
+    </main>
+  </body>
+</html>
