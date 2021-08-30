@@ -97,6 +97,7 @@ header h1 {
   margin: 0 auto;
   background-color: #fff;
   border-radius: 20px;
+  z-index: 10;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -128,5 +129,14 @@ header h1 {
 
 .infos .info span {
   font-size: 18px;
+}
+
+.map {
+  height: 60vh;
+  width: 100%;
+  background-color: #e2e241;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
 }
 /*# sourceMappingURL=main.css.map */
